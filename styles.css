@@ -2,6 +2,10 @@
 	padding: 0;
 	margin: 0;
 }
+body * {
+	/* outline: 1px solid blue; */
+}
+
 body {
 	background: url(https://vignette.wikia.nocookie.net/fairytail/images/7/7a/BG3.png);
 	font-family: sans-serif;
@@ -18,15 +22,27 @@ body {
 }
 
 .google-advertise {
-	width: 1240px;
+	width: 1140px;
 	margin: 20px auto 0 auto;
 	margin-bottom: 20px;
 	text-align: center;
 }
 
+footer {
+	width: 1100px;
+	padding: 20px;
+	background: #8a1201;
+	margin: 10px auto;
+	color: #fff;
+}
+
 header {
 	background: #8a1201;
 	padding: 20px 20px 30px 20px;
+}
+
+span {
+	font-weight: bold;
 }
 
 header a,
@@ -57,4 +73,68 @@ h1 {
 .main-body p {
 	line-height: 2;
 	margin-bottom: 10px;
+}
+
+.main-body h2 {
+	border-bottom: 1px solid #eee;
+	margin-bottom: 10px;
+	padding-bottom: 10px;
+}
+
+.main-body a {
+	text-decoration: none;
+	color: #62a5ff;
+}
+
+.tab-container img {
+	width: 250px;
+	margin-left: 10px;
+}
+.tab-container .text-container {
+	width: 60%;
+}
+
+.tab-container img,
+.tab-container .text-container {
+	display: inline-block;
+	vertical-align: top;
+	/* width: 50%; */
+}
+
+.main-body,
+.side-bar {
+	display: inline-block;
+	vertical-align: top;
+}
+
+.side-bar {
+	width: 380px;
+}
+
+.side-bar h2 {
+	margin-bottom: 10px;
+	border-bottom: 1px solid #eee;
+	padding-bottom: 10px;
+}
+
+/* override */
+.ui-tabs-anchor:focus {
+	outline: none;
+}
+
+.ui-tabs .ui-tabs-panel {
+	display: block;
+	border-width: 0;
+	padding: 1em 0.4em;
+	background: none;
+}
+
+.ui-accordion .ui-accordion-content {
+	padding: 1em 0.7em;
+	border-top: 0;
+	overflow: auto;
+}
+
+#accordion div {
+	text-align: center;
 }

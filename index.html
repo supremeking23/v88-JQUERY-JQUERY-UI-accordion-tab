@@ -5,12 +5,20 @@
 		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
 		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
 		<title>Tab and Accordion</title>
-		<link rel="stylesheet" href="https://ajax.googleapis.com/ajax/libs/jqueryui/1.12.1/themes/smoothness/jquery-ui.css" />
+		<link rel="shortcut icon" href="./img/Favicon.ico" type="image/x-icon" />
+		<link rel="stylesheet" href="./jquery-ui.min.css" />
 
 		<link rel="stylesheet" href="./styles.css" />
 
 		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
 		<script src="https://ajax.googleapis.com/ajax/libs/jqueryui/1.12.1/jquery-ui.min.js"></script>
+
+		<script>
+			$(function () {
+				$("#tabs").tabs();
+				$("#accordion").accordion();
+			});
+		</script>
 	</head>
 	<body>
 		<div class="google-advertise">
@@ -21,15 +29,15 @@
 				<a href="">
 					<img
 						src="https://vignette4.wikia.nocookie.net/fairytail/images/8/89/Wiki-wordmark.png/revision/latest?cb=20151001052250"
-						alt=""
+						alt="mimi yu"
 					/>
 				</a>
 				<div class="nav">
 					<h2>Fairy Tail Wiki</h2>
-					<a href="">Home</a>
-					<a href="">Characters</a>
-					<a href="">Stories</a>
-					<a href="">Blogs</a>
+					<a href="#">Home</a>
+					<a href="#">Characters</a>
+					<a href="#">Stories</a>
+					<a href="#">Blogs</a>
 				</div>
 			</header>
 			<h1>Fairy Tail (Series)</h1>
@@ -51,10 +59,118 @@
 					released the manga commencing from the 13th volume starting from May 10 of 2011. As of February 2020, Fairy Tail has over 72
 					million tankōbon volumes in circulation worldwide.
 				</p>
+
+				<div id="tabs">
+					<ul>
+						<li><a href="#tabs-1">Plot</a></li>
+						<li><a href="#tabs-2">Manga</a></li>
+						<li><a href="#tabs-3">Anime</a></li>
+					</ul>
+					<div id="tabs-1">
+						<h2>Plot</h2>
+						<p>
+							<a href="#">Lucy Heartfilia</a>, a traveling Mage, meets <a href="#">Natsu Dragneel</a>, a Mage looking for his foster
+							parent, a Dragon named Igneel, with his best friend, Happy, a blue, talking and flying cat. Shortly after their meeting,
+							Lucy is abducted by Bora of Prominence, who was posing as Salamander of Fairy Tail, to be sold as a slave. Natsu rescues
+							her and reveals that he is the real Salamander of Fairy Tail and has the skills of a Dragon Slayer, a form of Lost Magic.
+							He offers her membership into the guild, which she gladly accepts. They, along with the armored Mage Erza Scarlet,
+							Ice-Make Mage Gray Fullbuster, and Happy, become a team performing various missions offered to the Fairy Tail Guild.
+						</p>
+					</div>
+					<div id="tabs-2" class="tab-container">
+						<h2>Manga</h2>
+						<h4>Main article: Volumes and Chapters</h4>
+						<div class="text-container">
+							<p>
+								Fairy Tail is a weekly manga written and illustrated by Hiro Mashima. The series was first serialized in the Weekly
+								Shōnen Magazine on August 2, 2006. The individual chapters are collected and published in tankōbon volumes by
+								Kodansha, with the first one being released on December 15, 2006. During its many years of serialization, the series
+								has had many specials such as omakes and crossovers. In addition, the official Fanbook, <span>Fairy Tail+</span> was
+								released on May 17, 2010, in Japan.
+							</p>
+
+							<p>
+								The series was first licensed for an English language release in North America by Del Rey Manga (a child company of
+								Kodansha & Random House) on July 28, 2007. From March 2008 to September 2010, they released the first twelve volumes,
+								with the first volume being released on March 25, 2008. On October 4, 2012, Kodansha and Random House announced that
+								they will shut down Del Rey Manga, and that Kodansha USA will be licensing and taking over publishing of certain
+								ongoing titles. Kodansha USA took over and released the manga commencing from the 13th volume starting from May 10 of
+								2011.
+							</p>
+						</div>
+						<img src="./img/manga.png" alt="manga" />
+					</div>
+					<div id="tabs-3" class="tab-container">
+						<h2>Anime</h2>
+						<h4>Main article: List of Episodes</h4>
+						<div class="text-container">
+							<p>
+								An anime adaptation co-produced by A-1 Pictures and Satelight, directed by Ishihira Shinji and debuted by TV Tokyo
+								premiered on October 12, 2009. The series went on hiatus on March 30, 2013, with 175 episodes, 41 DVD volumes, 6 OVAs
+								and 1 animated film. The anime once again resumed on April 5, 2014 again then ended on March 26, 2016 with 277
+								episodes released. The third and final season of the Fairy Tail anime was announced on July 24, 2018 and it later
+								aired from October 7th, 2018 to September 29, 2019 with the series having 328 episodes, 63+ DVD volumes, 9 OVAs, 2
+								animated movies at the the time of the final episode; the anime done by the collaboration of A-1 Pictures ·
+								CloverWorks/Bridge producing the anime.
+							</p>
+
+							<p>
+								Animax Asia broadcasted an English dubbed version of the Fairy Tail anime starting on September 30, 2010, but only
+								covered the first season, up to episode 48. It aired in some parts of Asia and in the Philippines, where they
+								initially used the Hong Kong based English dub, but later on changed to the original Japanese audio. The anime series
+								won Animax Asia's "Anime Of The Year" award. Currently, FUNimation Entertainment has been licensed to Fairy Tail for a
+								North American release in English dub[1] and has distributed season 1, season 2 and, currently season 3.
+							</p>
+						</div>
+						<img src="./img/anime.jpg" alt="anime" />
+					</div>
+				</div>
 			</div>
+
 			<div class="side-bar">
-				<h2>sidebar</h2>
+				<h2>Recent Wiki Activity</h2>
+				<div id="accordion">
+					<h3>Mashima HERO'S</h3>
+					<div>
+						<p>
+							The Fairy Tail guild is enjoying a well-deserved rest on True Island when Natsu gets drawn into the jungle by the smell of
+							delicious fruit. There he encounters Shiki, a young boy who’s also after that same fruit. On the other hand, Haru and his
+							friends are also on the island and intend to destroy something called "Oasis."
+						</p>
+						<img src="./img/eden.png" alt="" />
+					</div>
+					<h3>Thibault</h3>
+					<div>
+						<p>
+							Sed non urna. Donec et ante. Phasellus eu ligula. Vestibulum sit amet purus. Vivamus hendrerit, dolor at aliquet laoreet,
+							mauris turpis porttitor velit, faucibus interdum tellus libero ac justo. Vivamus non quam. In suscipit faucibus urna.
+						</p>
+					</div>
+					<h3>Yuka Suzuki</h3>
+					<div>
+						<p>
+							Nam enim risus, molestie et, porta ac, aliquam ac, risus. Quisque lobortis. Phasellus pellentesque purus in massa. Aenean
+							in pede. Phasellus ac libero ac tellus pellentesque semper. Sed ac felis. Sed commodo, magna quis lacinia ornare, quam
+							ante aliquam nisi, eu iaculis leo purus venenatis dui.
+						</p>
+					</div>
+					<h3>Tower of Heaven</h3>
+					<div>
+						<p>
+							Cras dictum. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Vestibulum ante
+							ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Aenean lacinia mauris vel est.
+						</p>
+						<p>
+							Suspendisse eu nisl. Nullam ut libero. Integer dignissim consequat lectus. Class aptent taciti sociosqu ad litora torquent
+							per conubia nostra, per inceptos himenaeos.
+						</p>
+					</div>
+				</div>
 			</div>
 		</div>
+
+		<footer>
+			<p>© 2021, Ivan Christian Jay Funcion</p>
+		</footer>
 	</body>
 </html>
