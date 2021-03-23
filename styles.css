@@ -1,0 +1,60 @@
+* {
+	padding: 0;
+	margin: 0;
+}
+body {
+	background: url(https://vignette.wikia.nocookie.net/fairytail/images/7/7a/BG3.png);
+	font-family: sans-serif;
+	background-repeat: no-repeat;
+	background-position: top;
+	background-size: cover;
+	background-attachment: fixed;
+}
+
+.container {
+	width: 1140px;
+	margin: 20px auto 0 auto;
+	background: #ffffff;
+}
+
+.google-advertise {
+	width: 1240px;
+	margin: 20px auto 0 auto;
+	margin-bottom: 20px;
+	text-align: center;
+}
+
+header {
+	background: #8a1201;
+	padding: 20px 20px 30px 20px;
+}
+
+header a,
+header .nav {
+	display: inline-block;
+	vertical-align: middle;
+}
+
+header .nav {
+	margin-left: 20px;
+}
+
+header .nav * {
+	/* float: right; */
+	color: #fff;
+	text-decoration: none;
+	margin-right: 10px;
+}
+h1 {
+	border-bottom: 1px solid #eee;
+	margin-bottom: 10px;
+	padding: 20px;
+}
+.main-body {
+	padding: 20px;
+	width: 700px;
+}
+.main-body p {
+	line-height: 2;
+	margin-bottom: 10px;
+}
